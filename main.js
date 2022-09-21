@@ -1,7 +1,6 @@
 const algosdk = require("algosdk");
 const readline = require('readline-sync');
 
-
 async function criarConta() {
     const myAccount = algosdk.generateAccount();
     console.log("Endereço da conta: "+ myAccount.addr);
@@ -11,7 +10,6 @@ async function criarConta() {
     console.log("Adicione fundos no seuginte link: ");
     console.log("https://dispenser.testnet.aws.algodev.network?account="+myAccount.addr);
 }
-
 
 async function multiSign() {
     let account1_mnemonic = "adapt pill nation process engine cruise client shiver salute sense resist elephant manual this monkey parade ski drama tilt believe endless wisdom reopen absorb world";
